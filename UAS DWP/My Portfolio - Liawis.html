@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">\
+
+    <title>Vincent Liawis - 23SI2</title>
+
+    <style>
+    .navbar-brand{
+      font-weight: bolder;
+    }  
+
+    #home {
+      background: linear-gradient(to right, #c9daff 35%, white);
+      padding-top: 185px;
+    }
+
+    h2{
+      padding-bottom: 10px;
+      border-bottom: 3px solid silver;
+      border-color: white;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 35px;
+      font-weight: bold;
+    }
+
+    p{
+      text-align: justify;
+      font-size:17px;
+      margin: 5px;
+    }
+
+    .lead{
+      padding-right: 155px;
+
+    }
+
+    .mt-4{
+      text-shadow: 5px 5px 8px #c9daff, -5px -5px 8px #c9daff, -5px 5px 8px #c9daff, 5px -5px 8px#c9daff;
+      padding-right: 7px;
+    }
+
+    .datebirth{
+      padding-right: 160px;
+    }
+
+    /* tengah */
+    .tengah{
+      width:80%;
+      margin:auto;
+    }
+
+    .myskills{
+      font-size: 50px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin-bottom: 50px;
+      padding-top: 5px;
+      padding-bottom: 30px;
+      border-bottom: 3px solid #c9daff;
+    }      
+
+    #skills{
+      text-align: center;
+    }
+    
+    .kotakskill {
+      display: flex;
+      justify-content: space-between; /* Memastikan kolom terbagi dua dengan baik */
+    }
+    
+    .progress {
+      margin: 25px auto;
+      width: 90%;
+      height: 30px;
+    }
+
+    .skillkiri{
+      margin-right: 5px;
+      margin-left: 0px;
+    }
+
+    .skillkanan {
+      margin-right: 50px;
+    }
+    
+    .sekil{
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      letter-spacing: 4px;
+      font-size: large;
+      margin-left: 33px;
+      display: flex;
+      justify-content: space-between; /* Agar teks dan persentase berada di sisi masing-masing */
+      align-items: center; 
+    }
+
+    .percent{
+      letter-spacing: 0px;
+      color: red;
+      font-style: italic;
+      margin-right: 35px;
+    }
+
+    /*bawah*/
+    .bawah{
+      background: linear-gradient(to left,#c9daff 15%,  #ffffff6f  );
+    }
+
+    #ach, #proj{
+      height: 100%;
+      width:100%;
+      margin-top: 150px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Center vertically */
+      align-items: center; /* Center horizontally */
+      padding: 100px 0;
+    }
+
+    .judul{
+      padding-top: 50px;
+      padding-bottom: 30px;
+      font-size: 50px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    /* card */
+    .card{
+      margin-top: 40px;
+      overflow:hidden ;
+      box-shadow: 4px 4px 4px rgba(0, 0, 255, 0.37);
+    }
+    /* bawahhh */
+
+    /*Contact*/
+    form{
+      width:50%;
+      margin:auto;
+    }
+    button{
+      border-radius: 30px;
+      padding: 5px 30px;
+      margin-bottom: 100px;
+      background-color: #c9daff81;
+      border-color: #b7ccfa;
+    }
+    label{
+      font-weight: bold;
+      margin-left: 3px;
+    }
+    input{
+      border-radius: 5px;
+    }
+
+</style>
+</head>
+
+
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow fixed-top ">
+        <div class="container">
+          <a class="navbar-brand" href="#">MY PORTFOLIO</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#proj">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#ach">Achievements</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- END NAVBAR -->
+
+
+    
+    <!-- ABOUT + JUMBOTRON -->
+    <section id="home">
+      <div class="container">
+          <div class="row">
+              <!--About Me -->
+              <div class="col-lg-8">
+                  <h2 class="abtme text-center mt-1">ABOUT ME</h2>
+                  <div class="row">
+                    <!-- Left -->
+                    <div class="col-lg-6">
+                        <p>
+                            Hi, my name is Vincent Liawis, a 20-year-old who currently is in the second year studying Information Systems at UPH Medan. 
+                            I have a passion for basketball and enjoy listening to music as a source of motivation in life. 
+                            As an active player in the Angsapura Medan Basketball Club, I continuously strive to improve my skills both on and off the court.
+                        </p> <br>
+                        <p>
+                            My ambition is to create innovative business ideas and eventually become a successful entrepreneur. 
+                            I am currently helping my family manage their business while exploring new strategies to expand it further. 
+                        </p>
+                    </div>
+                    <!-- Right -->
+                    <div class="col-lg-6">
+                        <p>
+                            Along the way, I’ve developed a deep interest in learning new things, both at university and through personal experiences. 
+                            Beyond academics, I actively seek opportunities to grow my skill set, whether it’s through teamwork, creative projects, or problem-solving tasks. Because I take pride in being adaptable and open to challenges
+                        </p> <br>
+                        <p>
+                            Every new project teaches me something valuable, and I believe 
+                            this mindset will guide me toward achieving my goals as an entrepreneur and innovator in the future.
+                        </p>
+                    </div>
+                </div>
+              </div>
+  
+              <!--Profile -->
+              <div class="col-lg-4 text-center">
+                  <img src="Pas Foto BG Biru.jpg" alt="ProfilPic" class="rotate-text img-thumbnail" width="250">
+                  <h1 class="mt-4">VINCENT LIAWIS</h1>
+              </div>
+              <p class="lead text-end">Student | Athlete</p>
+              <p class="datebirth text-end">13 February 2005</p>
+          </div>
+      </div>
+  </section>
+
+  <!-- Waves Fade Right Face Down -->
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" width="100%" height="100%">
+    <defs>
+      <linearGradient id="fadeRight" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#c9daff" stop-opacity="1" />
+        <stop offset="35%" stop-color="#c9daff" stop-opacity="1" />
+        <stop offset="100%" stop-color="white" stop-opacity="1" />
+      </linearGradient>
+    </defs>
+    <path fill="url(#fadeRight)" d="M0,256L30,250C60,245,120,235,180,213C240,192,300,160,360,144C420,128,480,128,540,130C600,132,660,148,720,160C780,171,840,181,900,160C960,139,1020,96,1080,96C1140,96,1200,139,1260,160C1320,181,1380,171,1440,160L1440,0L0,0Z"></path>
+  </svg>
+    <!-- END JUMBOTRON + ABOUT -->
+
+
+
+    <!-- SKILLS -->
+    <section id="skills" class="tengah">
+      <div class="container">
+      <h2 class="myskills display-5 fw-bold mb-4 text-center"> My Skills</h2>
+    
+      <div class="kotakskill">
+        <!-- Kolom kiri dengan 4 skills -->
+        <div class="skillkiri col-6">
+          <!-- Skill 1 -->
+          <p class="sekil">DESIGNING  <span class="percent">78%</span></p>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 78%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+    
+          <!-- Skill 2 -->
+          <p class="sekil">MULTI-TASKING  <span class="percent">85%</span></p>
+          <div class="progress">
+            <div class="progress-bar bg-info" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+    
+          <!-- Skill 3 -->
+          <p class="sekil">ADAPTING  <span class="percent">75%</span></p>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+    
+          <!-- Skill 4 -->
+          <p class="sekil">TIME-MANAGEMENT  <span class="percent">90%</span></p>
+          <div class="progress">
+            <div class="progress-bar bg-info" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+    
+        <!-- Kolom kanan dengan 4 skills -->
+        <div class="skillkanan col-md-6">
+          <!-- Skill 5 -->
+          <p class="sekil">LEADERSHIP  <span class="percent">88%</span></p>
+          <div class="progress">
+            <div class="progress-bar bg-info" role="progressbar" style="width: 88%" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+    
+          <!-- Skill 6 -->
+          <p class="sekil">PROBLEM SOLVING  <span class="percent">80%</span></p> 
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+    
+          <!-- Skill 7 -->
+          <p class="sekil">COMMUNICATION  <span class="percent">92%</span></p>
+          <div class="progress">
+            <div class="progress-bar bg-info" role="progressbar" style="width: 92%" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+    
+          <!-- Skill 8 -->
+          <p class="sekil">VIDEO-EDITING  <span class="percent">95%</span> </p>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <!-- END SKILLS -->
+
+
+     <!-- PROJECT -->
+     <section id="proj" class="bawah">
+      <div class="container">
+      <h2 class="judul display-5 fw-bold mb-4 text-center">MY PROJECTS</h2>
+      <!-- ES -->
+       <div class="row justify-content-center">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card" style="width: 18rem;">
+            <img src="ElderScrolls.png" class="card-img-top" alt="kejurkot">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">WEB DESIGN</h5>
+              <p class="card-text">The Elder Scrolls</p>
+             
+            </div>
+          </div>
+        </div>
+        <!-- Menu -->
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card" style="width: 18rem;">
+            <img src="MenuResto.png" class="card-img-top" alt="mba1">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">WEB DESIGN</h5>
+              <p class="card-text">Delight Restaurant Menu</p>
+            </div>
+          </div>
+        </div>
+        <!-- Rsv-->
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card" style="width: 18rem;">
+            <img src="Resv.png" class="card-img-top" alt="metal">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">WEB DESIGN</h5>
+              <p class="card-text">Hotel Reservation Form</p>
+            </div>
+          </div>
+        </div>
+        <!-- FB -->
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card" style="width: 18rem;">
+            <img src="FB.png" class="card-img-top" alt="mba2">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">WEB DESIGN</h5>
+              <p class="card-text">Facebook Registration</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <!-- END PROJECT -->
+
+
+
+    <!-- ACHIEVEMENTS-->
+    <section id="ach" class="bawah">
+      <div class="container">
+      <h2 class="judul display-5 fw-bold mb-4 text-center">RECENT ACHIEVEMENTS</h2>
+      <!-- 3x3 -->
+       <div class="row justify-content-center">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card" style="width: 18rem;">
+            <img src="Kejurkot 3x3.jpg" class="card-img-top" alt="kejurkot">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">KEJURKOT 3X3</h5>
+              <p class="card-text">U18 Category - 2nd Place</p>
+              <a href="https://www.instagram.com/p/Ct5WqsqyZiE/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" class="btn btn-outline-primary">View On Instagram</a>
+            </div>
+          </div>
+        </div>
+        <!-- MBA VOL 1 -->
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card" style="width: 18rem;">
+            <img src="MBA Vol.1.jpg" class="card-img-top" alt="mba1">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">MBA VOL.1</h5>
+              <p class="card-text">U18 Category - 1st Place</p>
+              <a href="https://www.instagram.com/p/CvoYlTlyupc/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" class="btn btn-outline-primary">View On Instagram</a>
+            </div>
+          </div>
+        </div>
+        <!-- Metal Cup -->
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card" style="width: 18rem;">
+            <img src="Metal Cup.jpg" class="card-img-top" alt="metal">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">METAL CUP</h5>
+              <p class="card-text">U18 Category - 1st Winner</p>
+              <a href="https://www.instagram.com/p/Cle_NWoyBIm/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" class="btn btn-outline-primary">View On Instagram</a>
+            </div>
+          </div>
+        </div>
+        <!-- MBA Vol 2 -->
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card" style="width: 18rem;">
+            <img src="MBA VOL2.jpg" class="card-img-top" alt="mba2">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">MBA VOL.2</h5>
+              <p class="card-text">University Category - 3rd Place</p>
+              <a href="https://www.instagram.com/p/C2Y6fxHyXWd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" class="btn btn-outline-primary">View On Instagram</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <!-- END ACHIEVEMENTS -->
+
+
+
+  
+    
+
+    <!--CONTACT-->
+    <section id="contact" class="bawah">
+      <div class="container">
+      <h2 class="judul display-5 fw-bold mb-4 text-center">CONTACT ME</h2>
+        <div class="form">
+          <form>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="John Doe">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- END PROJECT -->
+
+
+
+
+
+  </body>
+
+</html>
